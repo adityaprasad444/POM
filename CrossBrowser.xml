@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Spicejet" parallel="methods" thread-count="5">
+	<test name="ChromeTest">
+		<parameter name="browsername" value="Chrome" />
+		<classes>
+			<class name="com.User.Tests.Tc1_Login" />
+		</classes>
+	</test>
+	<test name="FirefoxTest">
+		<parameter name="browsername" value="Firefox" />
+		<classes>
+			<class name="com.User.Tests.Tc1_Login" />
+		</classes>
+	</test>
+	<test name="EdgeTest">
+		<parameter name="browsername" value="Edge" />
+		<classes>
+			<class name="com.User.Tests.Tc1_Login" />
+		</classes>
+	</test>
+</suite>
